@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    background: #333;
+    color: white;
+    border-bottom: #6B72E1 3px solid;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 20px auto;
+}
+
+.about-me, .projects {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+}
+
+.school-link, .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.school-link:hover, .project-link:hover {
+    background: #6B72E1;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background: #e7e7e7;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 40px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .container, .about-me, .projects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1, header p {
+        font-size: smaller;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+}
