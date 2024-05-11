@@ -31,7 +31,8 @@ header {
 .about-me, .projects, .skills .project {
     padding: 20px;
     margin: 20px 0;
-    background: white; /* Apply white background to both project and skills sections */
+    background: white; /* Ensure white background */
+    box-shadow: 0px 0px 10px #ccc; /* Optional: adds shadow for better visibility */
 }
 
 .school-link, .project-link {
@@ -48,6 +49,13 @@ header {
     background: #6B72E1;
     color: #fff;
     text-decoration: underline;
+}
+
+.skill-bar {
+    height: 5px;
+    background-color: #5d5d5d;
+    margin-bottom: 10px;
+    width: 100%; /* Default width */
 }
 
 footer {
