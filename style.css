@@ -31,7 +31,7 @@ header {
 .about-me, .projects, .skills .project {
     padding: 20px;
     margin: 20px 0;
-    background: white; /* Ensure white background */
+    background: white; /* Consistent white background for sections */
     box-shadow: 0px 0px 10px #ccc; /* Optional: adds shadow for better visibility */
 }
 
@@ -51,11 +51,24 @@ header {
     text-decoration: underline;
 }
 
+.skill {
+    width: 100%; /* Set the width of the skill container */
+    margin-bottom: 20px; /* Spacing between skills */
+}
+
 .skill-bar {
-    height: 5px;
-    background-color: #5d5d5d;
-    margin-bottom: 10px;
-    width: 100%; /* Default width */
+    height: 10px; /* Height of the skill bar */
+    background-color: #ddd; /* Light grey for unfilled portion */
+    margin-top: 5px; /* Space between the label and the bar */
+    border-radius: 5px; /* Rounded corners */
+    position: relative; /* Needed to position the filled part absolutely */
+}
+
+.skill-bar > .filled {
+    height: 100%; /* Fill the height of the container */
+    background-color: #5d5d5d; /* Dark grey for filled portion */
+    position: absolute; /* Position absolutely within the parent */
+    border-radius: 5px; /* Rounded corners for aesthetics */
 }
 
 footer {
