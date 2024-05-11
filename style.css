@@ -31,7 +31,7 @@ header {
 .about-me, .projects, .skills .project {
     padding: 20px;
     margin: 20px 0;
-    background: white;
+    background: white; /* Apply white background to both project and skills sections */
 }
 
 .school-link, .project-link {
@@ -48,12 +48,6 @@ header {
     background: #6B72E1;
     color: #fff;
     text-decoration: underline;
-}
-
-.project {
-    margin: 20px 0;
-    padding: 20px;
-    background: #e7e7e7;
 }
 
 footer {
